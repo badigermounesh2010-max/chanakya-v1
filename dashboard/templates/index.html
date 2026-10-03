@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanakya v1 - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h1>Chanakya v1</h1>
+            <ul>
+                <li><a href="/">📊 Dashboard</a></li>
+                <li><a href="/trading">💹 Trading</a></li>
+                <li><a href="/automation">🤖 Automation</a></li>
+                <li><a href="/ai">🧠 AI</a></li>
+            </ul>
+        </nav>
+        
+        <main class="content">
+            <div class="header">
+                <h2>Dashboard</h2>
+                <div id="status">Loading...</div>
+            </div>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>AI Models</h3>
+                    <div id="models">Loading...</div>
+                </div>
+                
+                <div class="card">
+                    <h3>Trading Stats</h3>
+                    <div id="trades">Loading...</div>
+                </div>
+                
+                <div class="card">
+                    <h3>Skills</h3>
+                    <div id="skills">Loading...</div>
+                </div>
+                
+                <div class="card">
+                    <h3>System Health</h3>
+                    <div id="system">Loading...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>
